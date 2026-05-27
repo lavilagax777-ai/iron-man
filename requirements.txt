@@ -1,0 +1,7 @@
+streamlit
+google-genai
+openai
+supabase
+python-dotenv
+stripe
+pandas
