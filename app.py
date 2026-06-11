@@ -28,16 +28,14 @@ with st.sidebar:
     st.subheader("🧠 Selector de Cerebro (LLM)")
     llm_choice = st.selectbox(
         "Elige el modelo:",
-        options=["Gemini 1.5 Pro", "Llama 3 (vía OpenRouter)"],
+        options=["Gemini 1.5 Pro", "Grok 3", "Claude"],
         index=0,
     )
 
     st.info(
-        "**Modo Premium (Google AI Studio):** Mientras tengas tu cuenta activa y quieras "
-        "pasarle documentos larguísimos, seleccionas **Gemini 1.5 Pro**.\n\n"
-        "**Modo Supervivencia (Llama 3):** Si un mes decides no renovar tu suscripción de Google "
-        "y quieres algo totalmente gratis, seleccionas **Llama 3 (vía OpenRouter)** en ese mismo menú, "
-        "y el sistema automáticamente manda las preguntas al servidor gratuito."
+        "**Modo Premium (Google AI Studio):** Usa **Gemini 1.5 Pro** para análisis profundo y documentos largos.\n\n"
+        "**Modo Grok 3 (xAI):** El modelo de xAI, ideal para respuestas directas y rápidas (requiere `XAI_API_KEY`).\n\n"
+        "**Modo Claude (Anthropic):** Excelente para código y redacción natural (requiere `ANTHROPIC_API_KEY`)."
     )
 
     st.divider()
