@@ -1,0 +1,16 @@
+# Entornos virtuales y caché
+.env
+.venv
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos del sistema operativo y git
+.DS_Store
+.git
+.gitignore
+
+# Archivos sensibles locales
+.streamlit/secrets.toml
