@@ -1,0 +1,31 @@
+# 🐝 XICOPACK AGENT HIVE - DEFINICIÓN DE ROLES
+
+Este archivo define las responsabilidades y límites de tus agentes locales de IA.
+
+## 1. AGENTE: VIGILANTE (AUDITOR TÉCNICO)
+- **Función:** Auditar descripciones en Shopify para asegurar info técnica (Material, Medida, Unidades).
+- **Estado:** ✅ ACTIVO (metafield_audit.py)
+
+## 2. AGENTE: GUARDIÁN (SEGURIDAD SEO)
+- **Función:** Auditar cumplimiento con Google (Longitud de Títulos, Metas y URLs).
+- **Estado:** ✅ ACTIVO (seo_security_audit.py)
+
+## 3. AGENTE: CIBERSEGURIDAD (LEAKS)
+- **Función:** Escanear scripts en busca de API Keys y llaves expuestas.
+- **Estado:** ✅ ACTIVO (security_leak_audit.py)
+
+## 4. AGENTE: NEGOCIADOR (VENTAS)
+- **Función:** Responder dudas de clientes (HORECA/Mayoreo).
+- **Tono:** Profesional, ecológico, enfocado en "Empaques que vuelven a la tierra".
+- **Estado:** 🏗️ PLANEADO
+
+## 4. AGENTE: ORQUESTADOR (EL CEREBRO)
+- **Función:** Ejecutar todos los agentes en paralelo y generar un reporte unificado.
+- **Estado:** ✅ ACTIVO (orchestrator.py)
+
+---
+
+# 🚀 SISTEMA DE EJECUCIÓN PARALELA
+
+Para ejecutar la auditoría completa, usa:
+`python3 orchestrator.py`

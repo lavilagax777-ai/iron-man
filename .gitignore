@@ -1,4 +1,19 @@
-.env
+# Entornos virtuales
+.venv
+env/
+venv/
 __pycache__/
 *.pyc
+*.pyo
+
+# Dependencias web
+node_modules/
+.firebase/
+
+# Archivos del sistema
 .DS_Store
+.git/
+
+# Archivos sensibles locales
+.env
+.streamlit/secrets.toml
